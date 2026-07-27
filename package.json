@@ -10,7 +10,7 @@
     "copy": "cap copy",
     "open:ios": "cap open ios",
     "open:android": "cap open android",
-    "assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --iconBackgroundColorDark '#111111'"
+    "assets": "capacitor-assets generate --iconBackgroundColor '#A11A2E' --iconBackgroundColorDark '#1A1A18' --splashBackgroundColor '#FAF7F2' --splashBackgroundColorDark '#1A1A18'"
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",
