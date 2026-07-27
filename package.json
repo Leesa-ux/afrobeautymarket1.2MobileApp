@@ -1,0 +1,30 @@
+{
+  "name": "afrobeautymarket-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Afroé beauty marketplace — native iOS + Android shell (Capacitor) wrapping app.afroe.studio",
+  "scripts": {
+    "add:ios": "cap add ios",
+    "add:android": "cap add android",
+    "sync": "cap sync",
+    "copy": "cap copy",
+    "open:ios": "cap open ios",
+    "open:android": "cap open android",
+    "assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --iconBackgroundColorDark '#111111'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/app": "^6.0.1",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/geolocation": "^6.0.1",
+    "@capacitor/ios": "^6.1.2",
+    "@capacitor/keyboard": "^6.0.2",
+    "@capacitor/splash-screen": "^6.0.2",
+    "@capacitor/status-bar": "^6.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.1.2",
+    "typescript": "^5.6.0"
+  }
+}
