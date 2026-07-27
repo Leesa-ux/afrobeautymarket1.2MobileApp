@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"
+    />
+    <title>Afroé</title>
+    <style>
+      :root { color-scheme: light dark; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 { font-size: 2rem; letter-spacing: 0.02em; margin: 0; color: #111; }
+      p { margin: 0; color: #666; max-width: 22rem; line-height: 1.5; }
+      a {
+        margin-top: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        background: #111;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .spinner {
+        width: 28px; height: 28px;
+        border: 3px solid rgba(0,0,0,0.15);
+        border-top-color: #111;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @media (prefers-color-scheme: dark) {
+        html, body { background: #111; }
+        h1 { color: #fff; }
+        p { color: #aaa; }
+        a { background: #fff; color: #111; }
+        .spinner { border-color: rgba(255,255,255,0.15); border-top-color: #fff; }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      This local page is only shown as a boot/offline fallback. In normal
+      operation Capacitor loads the live site defined by `server.url` in
+      capacitor.config.ts (https://app.afroe.studio) directly.
+    -->
+    <div class="wrap">
+      <h1>Afroé</h1>
+      <div class="spinner" aria-label="Chargement"></div>
+      <p>Connexion à Afroé… Vérifiez votre connexion internet si cet écran persiste.</p>
+      <a href="https://app.afroe.studio">Ouvrir Afroé</a>
+    </div>
+  </body>
+</html>

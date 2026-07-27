@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# ── iOS native build artifacts (the ios/ project itself IS committed) ──
+ios/App/Pods/
+ios/App/build/
+ios/App/output/
+ios/DerivedData/
+ios/App/App/public/
+
+# ── Android native build artifacts (the android/ project itself IS committed) ──
+android/.gradle/
+android/build/
+android/app/build/
+android/app/src/main/assets/public/
+android/local.properties
+android/.idea/
+android/captures/
+*.keystore
+!debug.keystore
+
+# Misc
+.DS_Store
+*.log
+.vscode/
+dist/
