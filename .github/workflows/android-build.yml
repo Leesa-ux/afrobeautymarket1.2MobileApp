@@ -4,11 +4,11 @@ name: Android debug build
 # device without a local Android toolchain. Download it from the run's
 # "Artifacts" section, or install directly with `adb install app-debug.apk`.
 
+# Manual-only: this repo's account can't currently allocate Actions runners,
+# so the workflow is not wired to push/PR events (it would stamp a red ❌ on
+# every commit). Once Actions is re-enabled on the account, run it on demand
+# from the Actions tab → "Run workflow", or re-add push/pull_request triggers.
 on:
-  push:
-    branches: [main, claude/capacitor-scaffold]
-  pull_request:
-    branches: [main]
   workflow_dispatch: {}
 
 concurrency:
