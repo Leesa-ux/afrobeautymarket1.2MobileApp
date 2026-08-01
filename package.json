@@ -4,6 +4,7 @@
   "private": true,
   "description": "Afroé beauty marketplace — native iOS + Android shell (Capacitor) wrapping app.afroe.studio",
   "scripts": {
+    "build": "node -e \"if(!require('fs').existsSync('www/index.html')){process.exit(1)}\" && echo \"Using prebuilt static webDir: www\"",
     "add:ios": "cap add ios",
     "add:android": "cap add android",
     "sync": "cap sync",

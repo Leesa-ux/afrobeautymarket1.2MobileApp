@@ -1,0 +1,7 @@
+{
+  "name": "afroe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
